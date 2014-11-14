@@ -1,6 +1,7 @@
 html, body {
 	padding: 0;
 	margin: 0;
+	background-color: #DCDCDC;
 }
 
 header {
@@ -22,20 +23,22 @@ h1{
 	
 }
 
-#menu.floatable {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
 
 
 /* menu */
 
-#menu{
-		background: #DCDCDC;
-		
-}	
+#menu.floatable {
+position: fixed;
+top: 0;
+
+}
+
+#menu {
+		position: ;
+		width: 980px;
+        margin: 0 auto;
+}
+
 
 .menu{
         width: 100%;
@@ -169,10 +172,16 @@ h1{
 *:first-child+html .menu { zoom: 1; } /* IE7 */
 
 #corp {
-padding: 350px;
+position: float;
+width: 100%;
 background-color: #DCDCDC;
 }
 
+#contenu {
+margin: 0 auto;
+width: 200px;
+height:500px;
+ }
 footer {
 padding: 50px;
 background-color: #999;
