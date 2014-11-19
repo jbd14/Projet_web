@@ -175,6 +175,15 @@ top: 0;
 position: float;
 width: 100%;
 background-color: #DCDCDC;
+margin-left:240px;
+}
+
+#menuflotant {
+position: float;
+margin-left: 5px;
+width: 220px;
+height:200px;
+background-color: #997A8D;
 }
 
 #contenu {
