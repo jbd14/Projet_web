@@ -14,7 +14,7 @@
  
 <div id="menu">
 	<ul class="menu">
-			<li><a href="Authentification.php">Accueil</a></li>
+			<li><a href="../index.html">Accueil</a></li>
 			<li>
 					<a href="#">Jeux</a>
 					<ul>
@@ -37,18 +37,25 @@
 							<li><a href="#">Nouveauté</a></li>
 					</ul>
 			</li>
-			<li><a href="Contact.php">Contact</a></li>
+			<li><a href="../Contact.php">Contact</a></li>
 	</ul> 
 	
 </div>
-  <div id="corp">
-  <?php
+ 
+ <div id="corp">
+	 <?php
 if(isset($_POST["valider"])){
 	
 	if(!empty($_POST["login"])&&!empty($_POST["mdp"])){
 		
+		
+		$nom = $_POST["nom"];
+		$prenom = $_POST["prenom"];
+		$email = $_POST["email"];
+		$age = $_POST["age"];
 		$login = $_POST["login"];
 		$mdp = $_POST["mdp"];
+		$mdp2 = $_POST["mdp2"];
 		$base="info201a";
 		$server="info.univ-lemans.fr";
 		$user="info201a_user";
@@ -60,29 +67,26 @@ if(isset($_POST["valider"])){
 		if(!$retour){
 			
 			echo "Impossible de se connecter a la base";
-			echo '<br/><a href="../index.html">Retour</a>';
+			echo '<br/><a href="inscription.html">Retour</a>';
 			
 		}else{
-			
-			$requete='SELECT Prenom,Nom FROM FC_grp4_ID WHERE Login="'.$login.'" AND MdP="'.$mdp.'";';
-			$reponse=mysql_query($requete) or die ("Erreur Login ou Mot de passe incorecte") ;
-			
-			$donnees = mysql_fetch_array($reponse);
-			if ($donnees[0]!=NULL){
-				echo "Bonjour ".$donnees[0]." ".$donnees[1]." !<br/>";
+			if($mdp != $mdp2){
+				echo "Mot de passe incorrect";
+				echo '<br/><a href="inscription.html">Retour</a>';
 			}else{
-				echo "Erreur Login ou Mot de passe incorecte <br/>";
-				echo '<a href="../index.html">Retour</a>';
+				$inscription='INSERT INTO FC_grp4_ID VALUES("'.$nom.'","'.$prenom.'","'.$email.'","'.$age.'","'.$login.'","'.$mdp.'");';
+				$confirmation=mysql_query($inscription) or die ("Champs incorecte") ;
+				echo"Bienvenue sur le site";
 			}
 		}
 	}else {
 		
-		echo "Login ou Mot de passe incomplet";
-		echo '<br/><a href="../index.html">Retour</a>';
+		echo "Champ incomplet";
+		echo '<br/><a href="inscription.html">Retour</a>';
 	}
 }
 ?>
- 
+
  </div>
  
  <footer>

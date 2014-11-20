@@ -1,10 +1,10 @@
 ï»¿
 <html>  	
 <head>
- <title> Ludothèque le mans </title>
+ <title> LudothÃ©que le mans </title>
  <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8" />
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/principale.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS/principale.css"/>
 	
    <link rel="stylesheet" href="CSS/validationEngine.jquery.css" type="text/css"/>
 	<script src="js/formulaire/languages/jquery.validationEngine-fr.js" type="text/javascript" charset="utf-8"></script>
@@ -30,13 +30,13 @@
  
 <div id="menu">
 	<ul class="menu">
-			<li><a href="index.html">Accueil</a></li>
+			<li><a href="Authentification.php">Accueil</a></li>
 			<li>
 					<a href="#">Jeux</a>
 					<ul>
-							<li><a href="#">Jeux de réfléxion</a></li>
+							<li><a href="#">Jeux de rÃ©flÃ©xion</a></li>
 							<li><a href="#">Jeux en famille</a></li>
-							<li><a href="#">Résérvation</a></li>
+							<li><a href="#">RÃ©servation</a></li>
 					</ul>
 			</li>
 			<li>
@@ -48,7 +48,7 @@
 							<li><a href="#">Web design</a></li>
 					</ul>
 			</li>
-			<li><a href="#">Actualités</a>
+			<li><a href="#">Actualitï¿½s</a>
 					<ul>
 							<li><a href="#">CSS</a></li>
 							<li><a href="#">Graphic design</a></li>

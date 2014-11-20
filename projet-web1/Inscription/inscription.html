@@ -14,7 +14,7 @@
  
 <div id="menu">
 	<ul class="menu">
-			<li><a href="Authentification.php">Accueil</a></li>
+			<li><a href="../index.html">Accueil</a></li>
 			<li>
 					<a href="#">Jeux</a>
 					<ul>
@@ -37,52 +37,22 @@
 							<li><a href="#">Nouveauté</a></li>
 					</ul>
 			</li>
-			<li><a href="Contact.php">Contact</a></li>
+			<li><a href="../Contact.php">Contact</a></li>
 	</ul> 
 	
 </div>
-  <div id="corp">
-  <?php
-if(isset($_POST["valider"])){
 	
-	if(!empty($_POST["login"])&&!empty($_POST["mdp"])){
-		
-		$login = $_POST["login"];
-		$mdp = $_POST["mdp"];
-		$base="info201a";
-		$server="info.univ-lemans.fr";
-		$user="info201a_user";
-		$pwd="com72";
-		
-		$lien=mysql_connect($server,$user,$pwd);
-		$retour=mysql_select_db($base,$lien);
-
-		if(!$retour){
-			
-			echo "Impossible de se connecter a la base";
-			echo '<br/><a href="../index.html">Retour</a>';
-			
-		}else{
-			
-			$requete='SELECT Prenom,Nom FROM FC_grp4_ID WHERE Login="'.$login.'" AND MdP="'.$mdp.'";';
-			$reponse=mysql_query($requete) or die ("Erreur Login ou Mot de passe incorecte") ;
-			
-			$donnees = mysql_fetch_array($reponse);
-			if ($donnees[0]!=NULL){
-				echo "Bonjour ".$donnees[0]." ".$donnees[1]." !<br/>";
-			}else{
-				echo "Erreur Login ou Mot de passe incorecte <br/>";
-				echo '<a href="../index.html">Retour</a>';
-			}
-		}
-	}else {
-		
-		echo "Login ou Mot de passe incomplet";
-		echo '<br/><a href="../index.html">Retour</a>';
-	}
-}
-?>
- 
+  <div id="corp">
+  <form method="post" action="inscription.php">
+	 		Nom : <br /><input name="nom"/> <br /> <br />
+	 		Prenom : <br /><input name="prenom"/> <br /> <br />
+	 		Email : <br /><input name="email"/> <br /> <br />
+	 		Age : <br /><input name="age"/> <br /> <br />
+			Login : <br /><input name="login"/> <br /> <br />
+			Mot de passe :<br /> <input type="password" name="mdp"/> <br /> <br />
+			Confirmer le mot de passe :<br /> <input type="password" name="mdp2"/> <br /> <br />
+			<input type="submit" value="Valider" name = "valider" />
+		</form>
  </div>
  
  <footer>
@@ -106,3 +76,4 @@ if(isset($_POST["valider"])){
 </body>
 
 </html>
+  
