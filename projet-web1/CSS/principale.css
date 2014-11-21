@@ -194,5 +194,8 @@ height:500px;
  }
 footer {
 padding: 50px;
+width: 100%;
 background-color: #999;
+position: absolute;
+bottom: 0px;
 }
