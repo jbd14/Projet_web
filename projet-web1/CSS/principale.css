@@ -255,6 +255,7 @@ width: 980px;
 margin: 0 auto;
 background-color: #DCDCDC;
 padding: 4% 0 6% 20%;
+min-height: 100%;
 }
 
 label.form{
