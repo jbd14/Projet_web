@@ -180,6 +180,26 @@ background-color: #DCDCDC;
 margin-left:240px;
 height: 100%;
 }
+/* page inscription */
+#corpInscription {
+position: float;
+width: 980px;
+margin: 0 auto;
+background-color: #DCDCDC;
+padding: 4% 0 6% 20%;
+}
+
+label.inscription {
+  display:block;
+  float:left;
+  width:200px;
+  text-align:right;
+  padding:0 5px 0 0;
+}
+input.inscriptionIn {
+float:left;
+margin-left: 20px;
+}
 
 #menuflotant {
 position: fixed;
@@ -204,4 +224,6 @@ padding: 50px;
 background-color: #999;
 position: relative;
 bottom: 0;
+
 }
+
