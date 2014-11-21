@@ -197,12 +197,22 @@ label.inscription {
   float:left;
   width:200px;
   text-align:right;
-  padding:0 5px 0 0;
+  padding:0 7px 0 0;
 }
 input.inscriptionIn {
 float:left;
 margin-left: 20px;
 }
+
+
+
+input.valider {
+
+margin: 3% 0 0 30%;
+}
+
+/* menu inscription sur accueil*/
+
 
 #menuflotant {
 position: fixed;
@@ -237,3 +247,36 @@ min-width:100%;
 	text-align:right;
 }
 
+/* page inscription */
+
+#contentForm{
+position: float;
+width: 980px;
+margin: 0 auto;
+background-color: #DCDCDC;
+padding: 4% 0 6% 20%;
+}
+
+label.form{
+ display:block;
+  float:left;
+  width:200px;
+  text-align:right;
+  padding:0 7px 0 0; 
+
+}
+
+textarea.formtext{
+float: left;
+width: 27%;
+
+}
+
+input.formtext {
+float:left;
+}
+
+input.validerform{
+margin: 8% 0 0 30%;
+float:left;
+}
