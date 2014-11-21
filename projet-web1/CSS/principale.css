@@ -178,7 +178,8 @@ position: float;
 width: 100%;
 background-color: #DCDCDC;
 margin-left:240px;
-height: 100%;
+min-height: 100%;
+
 }
 /* page inscription */
 #corpInscription {
@@ -187,6 +188,7 @@ width: 980px;
 margin: 0 auto;
 background-color: #DCDCDC;
 padding: 4% 0 6% 20%;
+min-height: 100%;
 }
 
 label.inscription {
@@ -201,12 +203,15 @@ float:left;
 margin-left: 20px;
 }
 
+
+
 input.valider {
 
 margin: 3% 0 0 30%;
 }
 
 /* menu inscription sur accueil*/
+
 
 #menuflotant {
 position: fixed;
@@ -231,7 +236,14 @@ padding: 50px;
 background-color: #999;
 position: relative;
 bottom: 0;
+min-width:100%;
 
+}
+
+#adresse{
+	margin-right: 50px;
+	margin-bottom:100px;
+	text-align:right;
 }
 
 /* page inscription */
