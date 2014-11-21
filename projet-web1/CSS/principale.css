@@ -201,6 +201,12 @@ float:left;
 margin-left: 20px;
 }
 
+input.valider {
+
+margin: 3% 0 0 30%;
+}
+
+/* menu inscription sur accueil*/
 #menuflotant {
 position: fixed;
 margin-left: 5px;
