@@ -176,9 +176,10 @@ top: 0;
 
 #corp {
 position: float;
-width: 100%;
+width: 980px;
+margin:0 auto;
 background-color: #DCDCDC;
-margin-left:240px;
+
 min-height: 100%;
 
 }
@@ -215,11 +216,11 @@ margin: 3% 0 0 30%;
 
 
 #menuflotant {
-position: fixed;
-margin-left: 5px;
-margin-top:0 auto;
-width: 220px;
-height:170px;
+position: float ;
+float:right;
+margin-right: 5px;
+width: 15%;
+height:23%;
 background-color: #997A8D;
 }
 
