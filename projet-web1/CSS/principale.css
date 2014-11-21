@@ -179,6 +179,7 @@ width: 100%;
 background-color: #DCDCDC;
 margin-left:240px;
 min-height: 100%;
+
 }
 /* page inscription */
 #corpInscription {
@@ -225,6 +226,13 @@ padding: 50px;
 background-color: #999;
 position: relative;
 bottom: 0;
+min-width:100%;
 
+}
+
+#adresse{
+	margin-right: 50px;
+	margin-bottom:100px;
+	text-align:right;
 }
 
