@@ -24,22 +24,22 @@
 </head>
  
 <body>
- <header>
-	 
+  <header id="image"> 
+	 <h1>Ludothéque Dubois et Grudé</h1>
  </header>
  
 <div id="menu">
 	<ul class="menu">
-			<li><a href="index.html">Accueil</a></li>
+			<li><a href="../index.html">Accueil</a></li>
 			<li>
-					<a href="catalogue.php">Catalogue</a>
+					<a href="#">Catalogue</a>
 					<ul>
-							<li><a href="reservation.php">Reservation</a></li>
+							<li><a href="#">Reservation</a></li>
 					</ul>
 			</li>
-			<li><a href="Inscription/inscription.html">Inscription</a>
+			<li><a href="inscription.html">Inscription</a>
 			</li>
-			<li><a href="Contact.php">Contact</a></li>
+			<li><a href="../Contact.php">Contact</a></li>
 	</ul> 
 	
 </div>
