@@ -1,7 +1,9 @@
 html, body {
+	height: 100%;
 	padding: 0;
 	margin: 0;
 	background-color: #DCDCDC;
+	min-height: 100%;
 }
 
 header {
@@ -176,6 +178,7 @@ position: float;
 width: 100%;
 background-color: #DCDCDC;
 margin-left:240px;
+height: 100%;
 }
 
 #menuflotant {
@@ -192,10 +195,13 @@ margin: 0 auto;
 width: 200px;
 height:500px;
  }
+ 
+ 
 footer {
+left: 0;
+right: 0;
 padding: 50px;
-width: 100%;
 background-color: #999;
-position: absolute;
-bottom: 0px;
+position: relative;
+bottom: 0;
 }

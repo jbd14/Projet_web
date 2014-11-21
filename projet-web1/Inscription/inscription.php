@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+
 <html>  	
 <head>
  <title> Ludothèque le mans </title>
@@ -14,11 +14,11 @@
  
 <div id="menu">
 	<ul class="menu">
-			<li><a href="index.html">Accueil</a></li>
+			<li><a href="../index.html">Accueil</a></li>
 			<li>
-					<a href="#">Catalogue</a>
+					<a href="../catalogue.php">Catalogue</a>
 					<ul>
-							<li><a href="#">Reservation</a></li>
+							<li><a href="../reservation.php">Reservation</a></li>
 					</ul>
 			</li>
 			<li><a href="inscription.html">Inscription</a>

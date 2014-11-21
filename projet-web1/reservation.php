@@ -1,10 +1,10 @@
-<!DOCTYPE html >
+
 <html>  	
 <head>
  <title> Ludothèque le mans </title>
  <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8" />
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../CSS/principale.css"/>
+    <link rel="stylesheet" type="text/css" href="../projet-web1/CSS/principale.css"/>
 </head>
  
 <body>
@@ -14,31 +14,29 @@
  
 <div id="menu">
 	<ul class="menu">
-			<li><a href="../index.html">Accueil</a></li>
+			<li><a href="index.html">Accueil</a></li>
 			<li>
-					<a href="../catalogue.php">Catalogue</a>
+					<a href="catalogue.php">Catalogue</a>
 					<ul>
-							<li><a href="../reservation.php">Reservation</a></li>
+							<li><a href="reservation.php">Reservation</a></li>
 					</ul>
 			</li>
-			<li><a href="inscription.html">Inscription</a>
+			<li><a href="Inscription/inscription.html">Inscription</a>
 			</li>
-			<li><a href="../Contact.php">Contact</a></li>
+			<li><a href="Contact.php">Contact</a></li>
 	</ul> 
 	
 </div>
-	
-  <div id="corp">
-  <form method="post" action="inscription.php">
-	 		Nom : <br /><input name="nom"/> <br /> <br />
-	 		Prenom : <br /><input name="prenom"/> <br /> <br />
-	 		Email : <br /><input name="email"/> <br /> <br />
-	 		Age : <br /><input name="age"/> <br /> <br />
+ <div id="menuflotant">
+	 <form method="post" action="Authentification/Authentification.php">
 			Login : <br /><input name="login"/> <br /> <br />
 			Mot de passe :<br /> <input type="password" name="mdp"/> <br /> <br />
-			Confirmer le mot de passe :<br /> <input type="password" name="mdp2"/> <br /> <br />
-			<input type="submit" value="Valider" name = "valider" />
+			<input type="submit" value="Login" name = "valider" />
 		</form>
+	
+ </div>
+  <div id="corp">
+
  </div>
  
  <footer>
