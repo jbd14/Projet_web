@@ -45,61 +45,30 @@
 </div>
 
  
-  <div id="corp">
+
   
-		<div id="contenu">
 
-			<div id="contentForm">
 
-				<form name="contactform" id="contactform" class="form" method="post" action="submit.php" enctype="multipart/form-data">
+<div id="contentForm">
 
-	   				<p>
-
-	   					<label>Nom / Soci&eacute;t&eacute; *</label>
-
-	                    <span><input type="text" name="nom" size="40" class="validate[required]"/></span>
-
-	   				</p>
-
-	                <p>
-
-	   					<label>Mail *</label>
-
-	                    <span><input type="text" name="mail" size="40" class="validate[required]"/></span>
-
-	   				</p>
-
-	   				<p>
-
-	   					<label>T&eacute;l.</label>
-
-	                    <span><input type="text" name="tel" size="40" /></span>
-
-	   				</p>
+				<form name="contactform"  method="post" action="submit.php" enctype="multipart/form-data">
 
 	   				
+	   					<label class="form">Nom / Soci&eacute;t&eacute; * : </label><input class="formtext" type="text" name="nom" size="40" class="validate[required]"/></br></br>
 
-	                <p>
+	   					<label class="form">Mail * : </label><input class="formtext" type="text" name="mail" size="40" class="validate[required]"/></br></br>
 
-	                	<label>Message</label>
+	   					<label class="form">T&eacute;l. : </label><input class="formtext" type="text" name="tel" size="40" /></br></br>
 
-	                    <textarea name="message" class="textarea" class="validate[required]"></textarea>
+	                	<label class="form">Message : </label><textarea class="formtext" name="message" class="textarea" class="validate[required]"></textarea></br></br></br>
+						
+	                	<input class="valider" type="submit"  name="submit" value="Envoyer"/>
 
-	                </p>
+	    
 
-	                <br clear="all"/>
-
-	                <p>
-
-	                	<span><input type="submit" class="submit" name="submit" value="Envoyer"/></span>
-
-	               	</p>
-
-	               	<br clear="all"/>
-
+	            
 	          	</form>
-			</div>
-		</div>
+		
   
  </div>
  
