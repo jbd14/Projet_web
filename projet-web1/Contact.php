@@ -37,9 +37,9 @@
 							<li><a href="#">Reservation</a></li>
 					</ul>
 			</li>
-			<li><a href="inscription.html">Inscription</a>
+			<li><a href="Inscription/inscription.html">Inscription</a>
 			</li>
-			<li><a href="../Contact.php">Contact</a></li>
+			<li><a href="Contact.php">Contact</a></li>
 	</ul> 
 	
 </div>
