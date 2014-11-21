@@ -14,28 +14,14 @@
  
 <div id="menu">
 	<ul class="menu">
-			<li><a href="../index.html">Accueil</a></li>
+			<li><a href="index.html">Accueil</a></li>
 			<li>
-					<a href="#">Jeux</a>
+					<a href="#">Catalogue</a>
 					<ul>
-							<li><a href="#">Jeux de réfléxion</a></li>
-							<li><a href="#">Jeux en famille</a></li>
-							<li><a href="#">Résérvation</a></li>
+							<li><a href="#">Reservation</a></li>
 					</ul>
 			</li>
-			<li>
-				<a href="#">Animations</a>
-				<ul>
-							<li><a href="#">Activités 0-6ans</a></li>
-							<li><a href="#">Pour les plus grands</a></li>
-							<li><a href="#">Atelier ludique</a></li>
-					</ul>
-			</li>
-			<li><a href="#">Actualités</a>
-					<ul>
-							<li><a href="#">Agenda d'activité</a></li>
-							<li><a href="#">Nouveauté</a></li>
-					</ul>
+			<li><a href="inscription.html">Inscription</a>
 			</li>
 			<li><a href="../Contact.php">Contact</a></li>
 	</ul> 

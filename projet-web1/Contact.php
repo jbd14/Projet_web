@@ -1,7 +1,7 @@
 ï»¿
 <html>  	
 <head>
- <title> Ludothèque le mans </title>
+ <title> LudothÃ©que le mans </title>
  <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8" />
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS/principale.css"/>
@@ -32,29 +32,12 @@
 	<ul class="menu">
 			<li><a href="index.html">Accueil</a></li>
 			<li>
-					<a href="#">Jeux</a>
+					<a href="#">Catalogue</a>
 					<ul>
-							<li><a href="#">Jeux de réfléxion</a></li>
-							<li><a href="#">Jeux en famille</a></li>
-							<li><a href="#">Résérvation</a></li>
+							<li><a href="#">Reservation</a></li>
 					</ul>
 			</li>
-			<li>
-				<a href="#">Animations</a>
-				<ul>
-							<li><a href="#">CSS</a></li>
-							<li><a href="#">Graphic design</a></li>
-							<li><a href="#">Development tools</a></li>
-							<li><a href="#">Web design</a></li>
-					</ul>
-			</li>
-			<li><a href="#">Actualités</a>
-					<ul>
-							<li><a href="#">CSS</a></li>
-							<li><a href="#">Graphic design</a></li>
-							<li><a href="#">Development tools</a></li>
-							<li><a href="#">Web design</a></li>
-					</ul>
+			<li><a href="Inscription/inscription.html">Inscription</a>
 			</li>
 			<li><a href="Contact.php">Contact</a></li>
 	</ul> 
