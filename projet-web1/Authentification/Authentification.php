@@ -16,7 +16,7 @@
 	<ul class="menu">
 			<li><a href="../index.html">Accueil</a></li>
 			<li>
-					<a href="../catalogue.php">Catalogue</a>
+					<a href="../catalogue.html">Catalogue</a>
 					<ul>
 							<li><a href="../reservation.php">Reservation</a></li>
 					</ul>

@@ -17,7 +17,7 @@
 	<ul class="menu">
 			<li><a href="../index.html">Accueil</a></li>
 			<li>
-					<a href="../catalogue.php">Catalogue</a>
+					<a href="../catalogue.html">Catalogue</a>
 					<ul>
 							<li><a href="../reservation.php">Reservation</a></li>
 					</ul>
@@ -40,7 +40,7 @@
   <div id="corp">
 	<div id="menurecherche">
  
-	<form method="post" action="catalogue2.php">
+	<form method="post" action="catalogue.php">
 	 
 	  <br /> <br />
 			Recherche : <input name="type"/> 
