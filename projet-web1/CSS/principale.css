@@ -220,8 +220,15 @@ position: float ;
 float:right;
 margin-right: 5px;
 width: 15%;
-height:23%;
+height:25%;
 background-color: #997A8D;
+}
+
+#menurecherche {
+position: float ;
+float:right;
+margin-right: 5px;
+
 }
 
 #contenu {

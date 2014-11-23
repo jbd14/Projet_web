@@ -36,8 +36,20 @@
 		</form>
 	
  </div>
+ 
   <div id="corp">
-  
+	<div id="menurecherche">
+ 
+	<form method="post" action="Catalogue/catalogue2.php">
+	 
+	  <br /> <br />
+			Recherche : <input name="type"/> 
+			<input type="submit" value="Recherche" name = "valider" />
+		</form>
+	
+ </div>
+	 <br /> <br /> <br /> <br /><br/>
+	<hr/>
  </div>
  
  <footer>
