@@ -1,7 +1,7 @@
 
 <html>  	
 <head>
- <title> Ludoth�que le mans </title>
+ <title> Ludothéque le mans </title>
  <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8" />
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../CSS/principale.css"/>
@@ -10,7 +10,7 @@
 <body>
 	
  <header id="image"> 
-	 <h1>Ludoth�que Dubois et Grud�</h1>
+	 <h1>Ludothéque Dubois et Grudé</h1>
  </header>
  
 <div id="menu">
