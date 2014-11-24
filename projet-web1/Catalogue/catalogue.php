@@ -19,7 +19,7 @@
 			<li>
 					<a href="../catalogue.html">Catalogue</a>
 					<ul>
-						<li><a href="../panier.php">panier</a></li>
+						<li><a href="../panier.html">panier</a></li>
 					</ul>
 					
 			</li>
@@ -44,12 +44,12 @@
 	<form method="post" action="catalogue.php">
 	 
 	  <br /> <br />
-			Recherche : <input name="recherche"/> 
-			<select name="menu">
+			Recherche : <input name="recherche"/> <br/>
+			Trier par : <select name="menu">
 			<option value="Nom" selected="selected">Nom</option>
 			<option value="Ages">Age</option>
 			<option value="TypeJeux">Type de jeu</option>
-			</select> <br/>
+			</select>  <br/>
 			<input type="submit" value="Recherche" name = "valider" />
 		</form>
 	
@@ -102,7 +102,7 @@ if(isset($_POST["valider"])){
 					echo "<tr><td>".$donnees[0]."</td><td>".$donnees[1]."</td><td>".$donnees[2]."</td><td>".$donnees[3]."</td></tr>";
 				}
 			}else{
-					echo "Aucun article ne correspond � la recherche <br/>";
+					echo "Aucun article ne correspond à la recherche <br/>";
 					echo '<a href="../catalogue.html">Retour</a>';
 				}
 			echo "</table>";
@@ -114,6 +114,17 @@ if(isset($_POST["valider"])){
 	}
 }
 ?>
+<br /> <br /><br/>
+	<hr/>
+<form method="post" action="../reservation.php">
+	 
+	  <br /> <br />
+			Login : <input name="login"/>  <br />
+			Mot de passe : <input type="password" name="mdp"/> <br />
+			Nom du jeu a reserver : <input name="reserver"/> <br />
+			<input type="submit" value="Reserver" name = "valider" />
+		</form>
+	
  </div>
  
  <footer>

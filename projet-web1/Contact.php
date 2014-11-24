@@ -34,7 +34,7 @@
 			<li>
 					<a href="catalogue.html">Catalogue</a>
 					<ul>
-						<li><a href="../panier.php">panier</a></li>
+						<li><a href="panier.html">panier</a></li>
 					</ul>
 			</li>
 			<li><a href="Inscription/inscription.html">Inscription</a>

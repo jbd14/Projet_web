@@ -19,7 +19,7 @@
 			<li>
 					<a href="catalogue.html">Catalogue</a>
 					<ul>
-						<li><a href="../panier.php">panier</a></li>
+						<li><a href="panier.html">panier</a></li>
 					</ul>
 			</li>
 			<li><a href="Inscription/inscription.html">Inscription</a>
@@ -43,8 +43,8 @@
 	<form method="post" action="Catalogue/catalogue.php">
 	 
 	  <br /> <br />
-			Recherche : <input name="recherche"/> 
-			<select name="menu">
+			Recherche : <input name="recherche"/> <br/>
+			Trier par : <select name="menu">
 			<option value="Nom" selected="selected">Nom</option>
 			<option value="Ages">Age</option>
 			<option value="TypeJeux">Type de jeu</option>
@@ -53,9 +53,19 @@
 		</form>
 	
  </div>
-	 <br /> <br /> <br /> <br /><br/>
+	 <br /> <br /> <br /> <br /><br /><br /><br/>
 	<hr/>
 	
+	<br /> <br /><br/>
+	<hr/>
+	<form method="post" action="reservation.php">
+	 
+	  <br /> <br />
+			Login : <input name="login"/>  <br />
+			Mot de passe : <input type="password" name="mdp"/> <br />
+			Nom du jeu a reserver : <input name="reserver"/> <br />
+			<input type="submit" value="Reserver" name = "valider" />
+		</form>
 	
  </div>
  
