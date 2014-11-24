@@ -18,8 +18,8 @@
 			<li><a href="../index.html">Accueil</a></li>
 			<li>
 					<a href="../catalogue.html">Catalogue</a>
-					<ul><li>
-							<a href="../panier.php">panier</a></li>
+					<ul>
+						<li><a href="../panier.php">panier</a></li>
 					</ul>
 					
 			</li>
