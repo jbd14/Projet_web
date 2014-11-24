@@ -24,23 +24,12 @@
 </head>
  
 <body>
-  <header id="image"> 
+ <header id="image"> 
 	 <h1>Ludothéque Dubois et Grudé</h1>
  </header>
  
 <div id="menu">
-	<ul class="menu">
-			<li><a href="index.html">Accueil</a></li>
-			<li>
-					<a href="catalogue.html">Catalogue</a>
-					<ul>
-						<li><a href="panier.html">panier</a></li>
-					</ul>
-			</li>
-			<li><a href="Inscription/inscription.html">Inscription</a>
-			</li>
-			<li><a href="Contact.php">Contact</a></li>
-	</ul> 
+	<?php include 'menu.php'; ?>
 	
 </div>
 
@@ -72,24 +61,11 @@
   
  </div>
  
- <footer>
+  <footer>
+ <?php include 'footer.php'; ?>
  </footer>
  
-  <script type="text/javascript">
-		// listen for scroll
-		var positionElementInPage = $('#menu').offset().top;
-		$(window).scroll(
-			function() {
-				if ($(window).scrollTop() >= positionElementInPage) {
-					// fixed
-					$('#menu').addClass("floatable");
-				} else {
-					// relative
-					$('#menu').removeClass("floatable");
-				}
-			}
-		);
-	</script>
+
 </body>
 
 </html>

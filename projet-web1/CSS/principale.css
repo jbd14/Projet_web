@@ -235,6 +235,7 @@ width: 200px;
 height:500px;
  }
  
+ /* footer */
  
 footer {
 left: 0;
@@ -247,7 +248,23 @@ min-width:100%;
 
 }
 
+#copyright {
+position: float;
+width: 980px;
+margin: 0 auto;
+text-align: center;
+
+}
+
+span {
+color: #DCDCDC;
+font-size: 15pt;
+}
+
+
+
 #adresse{
+	position: float;
 	margin-right: 50px;
 	margin-bottom:100px;
 	text-align:right;

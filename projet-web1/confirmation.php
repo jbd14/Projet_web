@@ -31,7 +31,7 @@
 	         </div>
    		</div>
     </div>
-    <
-	<div id="pied"><?php include 'footer.php'; ?></div>
+    <footer> <?php include 'footer.php'; ?> </footer>
+
 </body>
 </html>

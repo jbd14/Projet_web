@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ludothèque</title>
+		<title> Ludothèque le mans </title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="style1.css" media="screen" />
 	</head>
 	<body>
+	 <header id="image"> 
+	 <h1>Ludothéque Dubois et Grudé</h1>
+ </header>
+ 
+<div id="menu">
+	<?php include 'menu.php'; ?>
 	
-	<h1 id = "En-tete"><center> <u> Ludotheque Pagis and Fouquet sama </u> </center></h1>
-			<ul id="menu-demo2"> 
-			<li><a href = "index.html">Accueil</a></li>
-			<li><a href = "jeux.html">Jeux</a>
-				<ul>
-					<li><a href = "liste_jeux.php">Liste des jeux </a></li>
-					<li><a href = "rechercher.html">Rechercher un jeu</a></li>
-				</ul>
-			</li>
-			<li><a href	= "reservation.html">Réservation</a>
-				
-			</li>	
-			<li><a href = "assistance.html">Assistance</a>
-				<ul>
-					<li><a href = "faq.html">FAQ</a></li>
-					<li><a href ="contact.html">Contact</a></li>				
-				</ul>
-			</li>
-			<li><a href = "espace_membre.html">Espace membre</a>
-				<ul>
-					<li><a href = "connexion.html">Connexion</a> </li>
-					<li><a href = "inscription.html">Inscription</a> </li>
-				</ul>
-			</li>
-		</ul>
+</div>
+	
+			
 		<div id = "bgauche">
 			<form method = "post" action = "recherche_rapide.php">
 				Rechercher : <input name = "recherche" size=15px />
@@ -65,7 +49,7 @@
 					if(!retour) { echo "Recherche impossible actuellement" ; }
 					
 					/*On selectionne les noms des jeux en fonction du critère de recherche et de la saisie de l'utilisateur*/
-					$test = mysql_query('SELECT Nom FROM FC_grp3_Jeux WHERE '.$critere_recherche.' LIKE "%'.$recherche.'%";');
+					$test = mysql_query('SELECT Nom FROM FC_grp4_Jeux WHERE '.$critere_recherche.' LIKE "%'.$recherche.'%";');
 					$verif = mysql_num_rows($test);
 			
 					/*On teste si il y a des jeux qui répondent aux critères de l'utilisateur*/
@@ -88,6 +72,10 @@
 				else { echo "La barre de recherche est vide."; }
 			}	
 		?>
-		</div>			
+		</div>	
+
+ <footer>
+ <?php include 'footer.php'; ?>
+ </footer>		
 	</body>
 </html>	

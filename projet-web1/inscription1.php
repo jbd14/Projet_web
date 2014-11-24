@@ -1,10 +1,10 @@
-<!DOCTYPE html >
+
 <html>  	
 <head>
  <title> Ludothèque le mans </title>
  <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8" />
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/principale.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS/principale.css"/>
 </head>
  
 <body>
@@ -16,14 +16,21 @@
 	<?php include 'menu.php'; ?>
 	
 </div>
-  <div id="corp">
-  <?php
+ 
+ <div id="corp">
+	 <?php
 if(isset($_POST["valider"])){
 	
 	if(!empty($_POST["login"])&&!empty($_POST["mdp"])){
 		
+		
+		$nom = $_POST["nom"];
+		$prenom = $_POST["prenom"];
+		$email = $_POST["email"];
+		$age = $_POST["age"];
 		$login = $_POST["login"];
 		$mdp = $_POST["mdp"];
+		$mdp2 = $_POST["mdp2"];
 		$base="info201a";
 		$server="info.univ-lemans.fr";
 		$user="info201a_user";
@@ -35,32 +42,29 @@ if(isset($_POST["valider"])){
 		if(!$retour){
 			
 			echo "Impossible de se connecter a la base";
-			echo '<br/><a href="index.php">Retour</a>';
+			echo '<br/><a href="inscription.php">Retour</a>';
 			
 		}else{
-			
-			$requete='SELECT Prenom,Nom FROM FC_grp4_ID WHERE Login="'.$login.'" AND MdP="'.$mdp.'";';
-			$reponse=mysql_query($requete) or die ("Erreur Login ou Mot de passe incorecte") ;
-			
-			$donnees = mysql_fetch_array($reponse);
-			if ($donnees[0]!=NULL){
-				echo "Bonjour ".$donnees[0]." ".$donnees[1]." !<br/>";
+			if($mdp != $mdp2){
+				echo "Mot de passe incorrect";
+				echo '<br/><a href="inscription.php">Retour</a>';
 			}else{
-				echo "Erreur Login ou Mot de passe incorecte <br/>";
-				echo '<a href="index.php">Retour</a>';
+				$inscription='INSERT INTO FC_grp4_ID VALUES("'.$nom.'","'.$prenom.'","'.$email.'","'.$age.'","'.$login.'","'.$mdp.'");';
+				$confirmation=mysql_query($inscription) or die ("Champs incorecte") ;
+				echo"Bienvenue sur le site";
 			}
 		}
 	}else {
 		
-		echo "Login ou Mot de passe incomplet";
-		echo '<br/><a href="index.php">Retour</a>';
+		echo "Champ incomplet";
+		echo '<br/><a href="inscription.php">Retour</a>';
 	}
 }
 ?>
- 
+
  </div>
  
- <footer>
+  <footer>
  <?php include 'footer.php'; ?>
  </footer>
  
