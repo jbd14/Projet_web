@@ -16,10 +16,8 @@
 	<ul class="menu">
 			<li><a href="../index.html">Accueil</a></li>
 			<li>
-					<a href="../catalogue.php">Catalogue</a>
-					<ul>
-							<li><a href="../reservation.php">Reservation</a></li>
-					</ul>
+					<a href="../catalogue.html">Catalogue</a>
+					
 			</li>
 			<li><a href="inscription.html">Inscription</a>
 			</li>

@@ -33,9 +33,7 @@
 			<li><a href="index.html">Accueil</a></li>
 			<li>
 					<a href="catalogue.html">Catalogue</a>
-					<ul>
-							<li><a href="reservation">Reservation</a></li>
-					</ul>
+					
 			</li>
 			<li><a href="Inscription/inscription.html">Inscription</a>
 			</li>

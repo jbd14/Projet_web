@@ -1,7 +1,7 @@
 
 <html>  	
 <head>
- <title> Ludothèque le mans </title>
+ <title> Ludothï¿½que le mans </title>
  <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8" />
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../projet-web1/CSS/principale.css"/>
@@ -10,7 +10,7 @@
 <body>
 	
  <header id="image"> 
-	 <h1>Ludothéque Dubois et Grudé</h1>
+	 <h1>Ludothï¿½que Dubois et Grudï¿½</h1>
  </header>
  
 <div id="menu">
@@ -18,9 +18,7 @@
 			<li><a href="index.html">Accueil</a></li>
 			<li>
 					<a href="catalogue.html">Catalogue</a>
-					<ul>
-							<li><a href="reservation.php">Reservation</a></li>
-					</ul>
+					
 			</li>
 			<li><a href="Inscription/inscription.html">Inscription</a>
 			</li>
@@ -43,7 +41,12 @@
 	<form method="post" action="Catalogue/catalogue.php">
 	 
 	  <br /> <br />
-			Recherche : <input name="type"/> 
+			Recherche : <input name="recherche"/> 
+			<select name="menu">
+			<option value="Nom" selected="selected">Nom</option>
+			<option value="Ages">Age</option>
+			<option value="TypeJeux">Type de jeu</option>
+			</select>  <br/>
 			<input type="submit" value="Recherche" name = "valider" />
 		</form>
 	
